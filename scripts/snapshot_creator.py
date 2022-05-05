@@ -126,7 +126,7 @@ def parse(stream):
                         'relocate'], help='set the type of'
                         ' linking used in view creation')
     parser.set_defaults(modules=False, use_develop=False,
-                        stop_after='install', link_type='hardlink')
+                        stop_after='install', link_type='symlink')
 
     return parser.parse_args(stream)
 
